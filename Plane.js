@@ -16,7 +16,7 @@ class Plane{
     }
     load(){
         //gltf加載器
-        const loader = new GLTFLoader().setPath('/assets/plane/')
+        const loader = new GLTFLoader().setPath('./assets/plane/')
         this.ready = false;
 
         loader.load(

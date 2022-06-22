@@ -1,6 +1,6 @@
-import { IcosahedronGeometry, TextureLoader, ShaderMaterial, Mesh, ShaderChunk } from '/libs/three137/three.module.js';
-import { noise } from '/libs/Noise.js';
-import { Tween } from '/libs/Toon3D.js';
+import { IcosahedronGeometry, TextureLoader, ShaderMaterial, Mesh, ShaderChunk } from './libs/three137/three.module.js';
+import { noise } from './libs/Noise.js';
+import { Tween } from './libs/Toon3D.js';
 
 class Explosion{
     //glsl
@@ -45,7 +45,7 @@ class Explosion{
         this.uniforms = {
             u_time:{ value: 0 },
             u_opacity: { value:0.6 },
-            u_tex: { value: new TextureLoader().load('/assets/plane/explosion.png')}
+            u_tex: { value: new TextureLoader().load('./assets/plane/explosion.png')}
         }
         ShaderChunk.noise = noise;
         const material = new ShaderMaterial({

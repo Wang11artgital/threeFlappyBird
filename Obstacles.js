@@ -13,7 +13,7 @@ class Obstacles{
         this.explosions = [];
     }
     loadStar(){
-        const loader = new GLTFLoader().setPath('/assets/plane/')
+        const loader = new GLTFLoader().setPath('./assets/plane/')
         this.ready = false;
 
         loader.load(
@@ -33,7 +33,7 @@ class Obstacles{
         )
     }
     loadBomb(){
-        const loader = new GLTFLoader().setPath('/assets/plane/')
+        const loader = new GLTFLoader().setPath('./assets/plane/')
 
         loader.load(
             'bomb.glb',

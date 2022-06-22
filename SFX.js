@@ -1,4 +1,4 @@
-import { AudioListener, Audio, PositionalAudio, AudioLoader } from '../../libs/three137/three.module.js';
+import { AudioListener, Audio, PositionalAudio, AudioLoader } from './libs/three137/three.module.js';
 class SFX{
     constructor(camera){
         this.listener= new AudioListener();
@@ -12,7 +12,7 @@ class SFX{
         this.sounds[name] = sound;
 
         const audioLoader = new AudioLoader();
-        audioLoader.load(`/assets/plane/${name}.mp3`,buffer=>{
+        audioLoader.load(`./assets/plane/${name}.mp3`,buffer=>{
             sound.setBuffer(buffer);
             sound.setLoop(loop);
             sound.setVolume(vol);

@@ -131,7 +131,7 @@ class Game{
     }
     setEnvironment(){
         //加載二進位式HDR文件(exr/hdr都可)
-        const loader = new RGBELoader().setPath('/assets/');
+        const loader = new RGBELoader().setPath('./assets/');
         //總之處理HDR的
         const pmremGenerator = new THREE.PMREMGenerator( this.renderer );
         //預處理投影紋理
@@ -192,7 +192,7 @@ class Game{
     }
     loadSkybox(){
         this.scene.background = new THREE.CubeTextureLoader()
-            .setPath('/assets/plane/paintedsky/')
+            .setPath('./assets/plane/paintedsky/')
             .load([
                 'px.jpg',
                 'nx.jpg',
