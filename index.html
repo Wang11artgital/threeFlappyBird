@@ -74,7 +74,7 @@
             font-size: 50px;
         }
         #info img{
-            padding-top: 20px;
+            padding-top: 25px;
         }
         #life{
             position: absolute;
@@ -103,16 +103,16 @@
     <p id="instru">空白鍵或點擊操控</p>
     <div id="info">
         <div id="life">
-            <img src="/assets/plane/plane-icon.png" /><div id="lives">3</div>
+            <img src="./assets/plane/plane-icon.png" /><div id="lives">3</div>
         </div>
         <div id="score-panel">
-            <div id="score">0</div><img src="/assets/plane/star-icon.png" />
+            <div id="score">0</div><img src="./assets/plane/star-icon.png" />
         </div>
     </div>
     <p id="gameover">Game over</p>
     <button id="playBtn">PLAY</button>
     <script type="module">
-        import { Game } from '/Game.js';
+        import { Game } from './Game.js';
 
         document.addEventListener("DOMContentLoaded", () => {
             const game = new Game();
